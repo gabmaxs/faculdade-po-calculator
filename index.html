@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Calculadora PO</title>
+</head>
+<body class="bg-gray-50">
+    <section class="border-box p-6 m-2 bg-gray-100 shadow-md flex flex-col items-center divide-y-4">
+        <form class="border-box bg-white w-full flex flex-col items-center p-2">
+            <input class="px-4 py-3 rounded-full my-2 w-full" id="function" placeholder="Digite a funcao objetivo" />
+            <textarea class="px-4 py-3 rounded my-2 w-full" id="restrictions" rows="5" placeholder="Digite as restrições"></textarea>
+            <submit class="px-4 py-3 rounded-md bg-blue-700 text-white">Calcular</submit>
+        </form>
+
+        <div class="border-box bg-white w-full flex flex-col items-center p-2">
+            <h1>Grafico</h1>
+            <div id="my_dataviz"></div>
+        </div>
+    </section>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
